@@ -2,37 +2,169 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Handicap_Iban</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="icon" href="./assets/Images/logo.png" type="image/png">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - HandiBlog_Iban</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" href="./assets/Images/logo.png" type="image/png">
 </head>
 
 <body>
-    <header>
-        <img src="./assets/Images/logo.png" alt="Logo handicap">
-        <nav>
-            <button>
-                <img src="./assets/Images/burger_menu.png" alt="menu burger">
-            </button>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <img src="./assets/Images/hero.jpg" alt="image representant differentes personnes hadicapées">
-            <h1>
-                Handicap inclusion
-            </h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo corporis excepturi qui unde necessitatibus ut fuga quasi rem, amet quibusdam sunt laboriosam, earum quam reprehenderit dolore nesciunt eaque suscipit ipsum?</p>
-        </section>
-        <blockquote cite="" class="bandeauCitation">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet reprehenderit maxime, corporis aspernatur vitae ratione molestias esse temporibus iste minima deleniti totam, quam accusamus est sunt adipisci ut nesciunt!</p>
-        </blockquote>
-        <cite>a random guy</cite>
-    </main>
+  <header class="fixed-top">
+    <nav class="navbar fixed-top bg-bleu">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/Images/logo.png" alt="logo handiBlog"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header bg-bleu">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HandiBlog</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-bleu">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./template/differents_handicaps.html">Les differents handicaps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./template/ressources.html">Nos ressources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./template/temoignages.html">Temoignages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./template/apropos.html">A propos de nous</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Nous contacter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <!-- hero -->
+    <section class="hero flexCenter container">
+      <img class="imgHero" src="./assets/Images/hero.jpg" alt="image representant differentes personnes hadicapées">
+      <h1 class="titre">Handicap inclusion</h1>
+      <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo corporis excepturi qui unde
+        necessitatibus
+        ut fuga quasi rem, amet quibusdam sunt laboriosam, earum quam reprehenderit dolore nesciunt eaque
+        suscipit ipsum?</p>
+    </section>
+
+    <!-- Citation -->
+    <section class="bandeauCitation">
+      <blockquote cite="">
+        <img class="imgQuote" src="./assets/Images/quote.png" alt="deux personnes riant ensemble">
+        <img class="guillemetOuv" src="./assets/Images/guillemetOuv.png" alt="guillemet ouvrante">
+        <p class="textQuote">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet reprehenderit maxime,
+          corporis
+          aspernatur vitae ratione molestias esse temporibus iste minima deleniti totam, quam accusamus est
+          sunt adipisci ut nesciunt!</p>
+          <div class="divGuillemetFer">
+          <img class="guillemetFer" src="./assets/Images/guillemetFer.png" alt="guillemet ouvrante">
+        </div>
+      </blockquote>
+      <cite class=>a random guy</cite>
+      <div class="clear"></div>
+    
+    </section>
+
+    <!-- articles -->
+    <section class="secArticlesEnAvant clear">
+      <h2 class="catArticle">Articles mis en avant</h2>
+      <a href="#" class="lienArticle">
+        <article class="flexArticle border1">
+          <img class="flexArticleImg" src="./assets/Images/article.png"
+            alt="des personnes en fauteil roulant faisant du sport">
+          <div class="flexArticleTexte">
+            <h3>
+              Titre de l'article
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, ab? Rerum exercitationem explicabo
+              harum adipisci, repudiandae laboriosam inventore itaque.</p>
+          </div>
+        </article>
+      </a>
+      <a href="#" class="lienArticle">
+        <article class="flexArticle border1">
+          <img class="flexArticleImg" src="./assets/Images/article.png"
+            alt="des personnes en fauteil roulant faisant du sport">
+          <div class="flexArticleTexte">
+            <h3>
+              Titre de l'article
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, ab? Rerum exercitationem explicabo
+              harum adipisci, repudiandae laboriosam inventore itaque.</p>
+          </div>
+        </article>
+      </a>
+      <a href="#" class="lienArticle">
+        <article class="flexArticle border1">
+          <img class="flexArticleImg" src="./assets/Images/article.png"
+            alt="des personnes en fauteil roulant faisant du sport">
+          <div class="flexArticleTexte">
+            <h3>
+              Titre de l'article
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, ab? Rerum exercitationem explicabo
+              harum adipisci, repudiandae laboriosam inventore itaque.</p>
+          </div>
+        </article>
+      </a>
+      <a href="#" class="lienArticle">
+        <article class="flexArticle border1">
+          <img class="flexArticleImg" src="./assets/Images/article.png"
+            alt="des personnes en fauteil roulant faisant du sport">
+          <div class="flexArticleTexte">
+            <h3>
+              Titre de l'article
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, ab? Rerum exercitationem explicabo
+              harum adipisci, repudiandae laboriosam inventore itaque.</p>
+          </div>
+        </article>
+      </a>
+    </section>
+
+    <!-- formulaire -->
+    <section id="contact">
+      <form class="formContact" action="">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom">
+        <label for="email">adresse Email</label>
+        <input type="email" name="email" id="email">
+        <label for="message">Votre Message</label>
+        <textarea name="message" id="message"></textarea>
+        <input class="submitContact" type="submit">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="footerText">
+      <a href="#">Mentions legal</a>
+      <a href="#">Copyright</a>
+    </section>
+    <section class="footerReseaux">
+      <a href="#"><img src="./assets/Images/insta.png" alt="logo instagram"></a>
+      <a href="#"><img src="./assets/Images/twitter.png" alt="logo twitter"></a>
+    </section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

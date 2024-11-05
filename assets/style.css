@@ -1,0 +1,235 @@
+.bg-bleu{
+    background-color: #007ACC;
+}
+
+body{
+    font-family: arial !important;
+    padding-top: 120px;
+}
+
+.flexCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clear{
+    clear: both;
+}
+
+.border1{
+    border: 2px solid black;
+    margin: 5%;
+}
+
+/* hero */
+.imgHero{
+    width: 100%;
+}
+.titre{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 4%;
+    text-align: center;
+}
+/* fin hero */
+
+/* Citation */
+.imgQuote{
+    float: inline-start;
+    margin: 10px;
+    
+}
+.bandeauCitation{
+    border: solid 1px black;
+    margin: 10px;
+}
+.textQuote{
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+.guillemetOuv{
+    height: auto;
+    width: 24px;
+}
+.guillemetFer{
+    height: auto;
+    width: 24px;
+    position: absolute;
+}
+.divGuillemetFer{
+    display: flex;
+    justify-content: end;
+    margin-right: 2px;
+}
+/* fin citation */
+
+/* footer */
+footer{
+    display: flex;
+    background-color: #007ACC;
+    padding: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+.footerText{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.footerReseaux{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+footer a{
+    color: white;
+    text-decoration: inherit;
+}
+/* fin du footer */
+
+/* titre de la catégorie article */
+.catArticle{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* début article*/
+.flexArticle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flexArticleTexte{
+    flex-direction: column;
+}
+.flexArticleImg{
+    margin: 10px;
+    max-width: 172px;
+    height: 100%;
+}
+
+.flexArticleTexte h3{
+    text-align: center;
+}
+
+.flexArticleTexte p{
+    font-size: 0.6em;
+}
+.lienArticle{
+    color: inherit;
+    text-decoration: inherit;
+}
+/* fin article */
+
+/* debut formulaire contact */
+.formContact{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.submitContact{
+    margin-top: 5px;
+}
+.formContact label{
+    margin-top: 10px;
+}
+/* fin formulaire contact */
+
+/* debut types de handicap */
+.textTypeHandi{
+    margin: 10px;
+}
+/* fin types de handicap */
+
+/* debut témoignage */
+.sectionTemoignage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.temoignage{
+    border: 1px solid black;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.titreTemoignage{
+    font-weight: 600;
+    text-align: center;
+}
+.imgTemoignage{
+    max-width: 140px;
+    height: auto;
+}
+.temoignageSousTitre{
+    font-size: 0.7em;
+    margin: 5px;
+}
+/* fin témoignage */
+
+/* debut section ressource */
+.secRessource:nth-child(even){
+    background-color: lightgray ;
+}
+
+.flexRessource{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.titreCategorieRessource{
+    font-weight: 600;
+}
+/* fin section ressource */
+
+/* debut une ressource */
+.uneRessource{
+    border: 1px solid black;
+    width: 44%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgRessource{
+    width: 150px;
+    height: auto;
+    margin-top: 5px;
+}
+.titreRessource{
+    text-align: center;
+}
+.textRessource{
+    margin: 5px;
+}
+/* fin une ressource */
+
+/* debut les partenaires */
+.partenaires{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.secImgPartenaire{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   gap: 10px;
+}
+.imgPartenaire{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+/* fin les partenaires */
